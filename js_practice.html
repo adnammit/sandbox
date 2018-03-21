@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <div id="header">
+
+    </div>
+    <div id="content">
+        <p id="placeholder">Loading...</p>
+        <div id="footer">
+            copyright 2018 fuzzybuttons
+        </div>
+    </div>
+
+    <script>
+    let d = new Date();
+    var header = document.getElementById("header");
+    header.innerHTML = "<h2>Welcome to Earth! Today's data is "+d+".</h2>";
+
+    var content = document.getElementById("content");
+    var placeholder = document.getElementById("placeholder");
+    var div = document.createElement("div");
+    // placeholder.parentNode.removeChild(placeholder);
+
+    var para = document.createElement("p");
+    var node = document.createTextNode("Oh hell, who am I kidding? When have I ever been anything but a sleazy rapacious heel? Is a dog man's best friend? I had a dog. The dog was large. It ate my garden, all the plants, and much earth. The dog ate so much earth it died. Its body went back to the earth.");
+    para.appendChild(node);
+
+    // content.appendChild(para);
+    div.appendChild(para);
+
+    var para = document.createElement("p");
+    var node = document.createTextNode("\nDid she tell you that there was no goodness in the world? I am 100% sure that we're not completely sure. Look at us. Two men apiece and we don't know what to do with any of the four of them. The beautiful thing about treasure is that it exists. It exists to be found. We call her the Log Lady.");
+    para.appendChild(node);
+
+    // content.appendChild(para);
+    div.appendChild(para);
+
+
+    // content.replaceChild(div,placeholder);
+    // placeholder.parentNode.insertBefore();
+    placeholder.parentNode.replaceChild(div,placeholder);
+
+    var footer = document.getElementById("footer");
+    var elem = document.createElement("hr");
+    footer.parentNode.insertBefore(elem,footer);
+
+    // content.innerHTML = "<p> </p>";
+
+
+
+    ///// PASS BY REF, PASS BY VALUE
+    function funky(num, arr, obj) {
+        console.log("Funky values are: ");
+
+        num+=1;
+        console.log(num);
+
+        arr.push(4);
+        console.log(arr);
+
+        obj.name="Felipe";
+        console.log(obj);
+    }
+
+    var num = 12;
+    var arr = [1,2,3];
+    var obj = {name:"Juan", age:"14"};
+
+    funky(num, arr, obj);
+    console.log("After funky:");
+    console.log(num);
+    console.log(arr);
+    console.log(obj);
+
+
+
+
+    function changeStuff(arr, obj) {
+        arr = [4,5,6];
+        obj = {name: "Charlie"};
+    }
+    var arr = [1,2,3];
+    var obj = {name: "Julie", age: "12"};
+    changeStuff(arr, obj);
+    console.log("After changeStuff:")
+    console.log(arr); // [1,2,3]
+    console.log(obj); // {name: "Julie", age: "12"};
+
+    function reallyChangeStuff(arr, obj) {
+        arr[0] = 4;
+        arr[1] = 5;
+        arr[2] = 6;
+        obj["name"] = "Charlie";
+    }
+    reallyChangeStuff(arr, obj);
+    console.log("After reallyChangeStuff:")
+    console.log(arr); // [4,5,6]
+    console.log(obj);
+
+
+    </script>
+</body>
+</html>
