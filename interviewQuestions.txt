@@ -1,0 +1,6 @@
+dictionary
+Write a program that produces a JSON structure that reports the following information about your system’s English dictionary file: number of proper nouns (words that begin with a capital letter), number of possessive words (words that end with an apostrophe ‘s’), and number of words of one or more letters that are neither proper nor possessive. Return a mapping of integers using the keys ‘proper-nouns’, ‘possessive’, and ‘other’. If a word is both possessive and proper,
+      pick one to win, it should be only counted once.
+
+Hostnames
+Write a program that produces random but memorable hostnames. Each invocation of the program should print one randomly generated hostname to stdout.

@@ -49,6 +49,9 @@
 
 
     ///// PASS BY REF, PASS BY VALUE
+
+    // The value of primitive num is not changed outside the function.
+    // Arr and obj values are passed by ref and they are changed
     function funky(num, arr, obj) {
         console.log("Funky values are: ");
 
@@ -72,9 +75,8 @@
     console.log(arr);
     console.log(obj);
 
-
-
-
+    // Using the assignment operator on non-primitive types instantiates a refrence to a new object --
+    //   the value of the original obj is not altered outside the function scope
     function changeStuff(arr, obj) {
         arr = [4,5,6];
         obj = {name: "Charlie"};
@@ -86,6 +88,7 @@
     console.log(arr); // [1,2,3]
     console.log(obj); // {name: "Julie", age: "12"};
 
+    // By altering the properties of the objects, the reference is preserved
     function reallyChangeStuff(arr, obj) {
         arr[0] = 4;
         arr[1] = 5;
@@ -100,5 +103,6 @@
 
     </script>
     <script src="excel_challenge.js" ></script>
+    <script src="string_manipulation.js"></script>
 </body>
 </html>

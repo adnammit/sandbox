@@ -1,0 +1,15 @@
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\bin\Debug\net6.0\cSharpPractice.exe
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\bin\Debug\net6.0\cSharpPractice.deps.json
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\bin\Debug\net6.0\cSharpPractice.runtimeconfig.json
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\bin\Debug\net6.0\cSharpPractice.dll
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\bin\Debug\net6.0\cSharpPractice.pdb
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.csproj.AssemblyReference.cache
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.AssemblyInfoInputs.cache
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.AssemblyInfo.cs
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.csproj.CoreCompileInputs.cache
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.dll
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\refint\cSharpPractice.dll
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.pdb
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\cSharpPractice.genruntimeconfig.cache
+C:\Users\tardigrade\codes\sandbox\cSharpPractice\obj\Debug\net6.0\ref\cSharpPractice.dll

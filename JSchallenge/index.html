@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Query Selector All, JS-Style</title>
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+
+<div id="playground">
+<h1>querySelectorAll</h1>
+
+    <p>Create a simplified version of <code>querySelectorAll</code>.</p>
+
+<ol>
+    <li id="a">Implement a version that works for selectors consisting of a single tag name, e.g. <code>div</code> or <code>span</code>. Call this function <code>qsa1(node, selector)</code>.</li>
+    <li id="b">Expand on this by accepting arbitrarily nested tag selectors, such as <code>p span</code> or <code>ol li code</code>. Call this function <code>qsa2(node, selector)</code>.</li>
+    <li id="c">Install your <code>qsa2</code> on the document and demonstrate that you have done so.</li>
+</ol>
+
+<p>That&apos;s it! However, <em>no external DOM-manipulation libraries</em> are allowed! Other utility libraries are fine.</p>
+</div>
+
+<h2>Test results: Press "Run"</h2>
+<p>For all tests, <code>var playground = document.getElementById('playground');</code>.</p>
+
+<div id="tests">
+    <h3>qsa1</h3>
+
+    <p><code>qsa1(playground, 'abbr').length == 0</code></p>
+    <p><code>qsa1(playground, 'div').length == 0</code></p>
+    <p><code>qsa1(playground, 'code').length == 8</code></p>
+    <p><code>map(qsa1(playground, 'li'), function(li) { return li.id; }).join('') == 'abc'</code></p>
+
+    <h3>qsa2</h3>
+
+    <p><code>qsa2(playground, 'p em').length == 1</code></p>
+    <p><code>qsa2(playground, 'ol li').length == 3</code></p>
+    <p><code>qsa2(playground, 'ol li code').length == 7</code></p>
+    <p><code>qsa2(playground, 'ol code').length == 7</code></p>
+</div>
+<script src="main.js"></script>
+<script>
+    var _testenv = window.onload;
+    window.onload = function () {
+        window.onload;
+        var playground = document.getElementById('playground');
+        var tests = document.getElementById('tests').querySelectorAll('code');
+        for (var i = 0; i < tests.length; i++) {
+            test = tests[i];
+            // debugger;
+            var passed = false;
+            try {
+                pair = test.textContent.split('==');
+                result = eval(pair[0]);
+                expected = eval(pair[1]);
+                console.log(result, expected);
+                passed = result === expected;
+                if (!passed) {
+                    console.log("Failure, expected %s but got %s", expected, result);
+                }
+            } catch (e) {
+              passed = false;
+              console.error(e);
+            }
+            console.log(test.textContent, passed);
+            test.classList.add(passed ? 'success' : 'fail');
+        }
+    };
+</script>
+
+</body>
+</html>

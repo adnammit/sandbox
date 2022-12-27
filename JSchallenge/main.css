@@ -1,0 +1,8 @@
+body { font-family: Helvetica, sans-serif; }
+
+code { font-family: Menlo, monospace; font-size: 0.9em; padding: .25rem; margin: .25rem 0; border-radius: .25rem; background-color: #eee; display: inline-block; }
+
+li { margin-bottom: .5rem; }
+
+code.success { background-color: #bfb; }
+code.fail { background-color: #fbb; }
